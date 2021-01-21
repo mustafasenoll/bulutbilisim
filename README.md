@@ -1,1 +1,3 @@
-# bulutbilisim
+# BULUT BİLİŞİM ÖDEVLER VE FİNAL
+MUSTAFA ŞENOL
+19MY03011
