@@ -18,11 +18,11 @@ export default class NewsItem extends React.Component{
     let buttonBackground;
 
      if (type === 'Sağlık') {
-        buttonBackground = 'magenta';
+        buttonBackground = 'gray';
     } else if (type === 'Siyaset') {
         buttonBackground = 'gray';
     } else if (type === 'Spor') {
-        buttonBackground = 'pink';
+        buttonBackground = 'gray';
     } else if (type === 'Ekonomi') {
         buttonBackground = 'green'
     } else if (type === 'Bilim') {
