@@ -2,7 +2,7 @@ import React from 'react';
 
 import {View, Text, FlatList, TouchableOpacity, StyleSheet} from 'react-native';
 
-export default class Aktarma extends React.Component{
+export default class xb extends React.Component{
   constructor(props){
     super(props)
     this.state = {
@@ -19,7 +19,7 @@ export default class Aktarma extends React.Component{
     this.setState({postlar:postListesi});
   }
 
-  postaTiklandi(x){
+  postatikla(x){
     this.setState({postId:x.item.id});
     this.setState({postTitle:x.item.title});
     this.setState({postBody:x.item.body});
@@ -37,7 +37,7 @@ export default class Aktarma extends React.Component{
         data={this.state.postlar}
         renderItem={(x)=>{
           return(
-            <TouchableOpacity onPress={()=> this.postaTiklandi(x)}>
+            <TouchableOpacity onPress={()=> this.postatikla(x)}>
               <Text>Post Id'si: {x.item.id}</Text>
             </TouchableOpacity>
           )
@@ -50,15 +50,15 @@ export default class Aktarma extends React.Component{
 
 const styles = StyleSheet.create({
   postIdsi:{
-    backgroundColor:'#ffd700',
+    backgroundColor:'#ff4500',
     fontSize: 20
   },
   postTitlesi:{
-    backgroundColor:'#00ff00',
+    backgroundColor:'#006400',
     fontSize: 20
   },
   postBodysi:{
-    backgroundColor:'#cd853f',
+    backgroundColor:'#800000',
     fontSize: 20
   }
 });
